@@ -1,0 +1,205 @@
+export type SupportedLanguage = 'en' | 'te';
+
+export const TRANSLATIONS: Record<SupportedLanguage, Record<string, string>> = {
+  en: {
+    appName: 'CareerTwin AI',
+    tagline: 'Campus Placement Intelligence & Career Development SaaS',
+    demoNotice: 'Prototype Demonstration — 400 Student Cohort. Institutional isolation active.',
+    
+    // Navigation
+    overview: 'Overview',
+    copilot: 'AI Career Copilot',
+    recruiterIntel: 'Recruiter Intelligence',
+    subjectsSkills: 'Subjects & Skills',
+    myPreparation: 'My Preparation Plan',
+    practiceCenter: 'Practice Center',
+    mockInterview: 'AI Mock Interview',
+    resumeAssistant: 'Resume & Portfolio',
+    communicationLab: 'Communication & Spoken Lab',
+    readinessScore: 'Readiness Analytics',
+    
+    // Placement Cell Navigation
+    students: 'Student Cohort',
+    recruiters: 'Recruiters & Drives',
+    historicalDb: 'Historical Intelligence DB',
+    skillGaps: 'Skill Gap Heatmaps',
+    training: 'Training Programs',
+    interventions: 'Interventions',
+    placementOutcomes: 'Placement Outcomes',
+    dataMoat: 'Data Moat & Trust',
+    csvPipeline: 'CSV Import / Export',
+    reports: 'Reports Center',
+    auditLogs: 'Audit Logs & Settings',
+    mentorWorkspace: 'Mentor & HOD Console',
+    adminConsole: 'Tenant Administration',
+
+    // Role Labels
+    role_student: 'Student',
+    role_faculty: 'Faculty Mentor',
+    role_placement_officer: 'Placement Officer',
+    role_hod: 'HOD / Department Chair',
+    role_training_coordinator: 'Training Coordinator',
+    role_college_admin: 'College Administrator',
+    role_super_admin: 'Platform Super Admin',
+
+    // Common Actions
+    switchRole: 'Switch Role',
+    switchCollege: 'Switch College',
+    darkTheme: 'Dark Mode',
+    lightTheme: 'Light Mode',
+    practiceNow: 'Practice Now',
+    saveQuestion: 'Save',
+    saved: 'Saved',
+    startMock: 'Start Mock Interview',
+    getAiGuidance: 'Ask Career Copilot',
+    uploadResume: 'Analyze Resume',
+    downloadReport: 'Download CSV',
+    importCsv: 'Import Student Data',
+    reviewIntervention: 'Review Student',
+    assignTraining: 'Assign Training',
+    markCompleted: 'Mark Done',
+    speakAudio: 'Listen Explanation',
+    stopAudio: 'Stop Audio',
+    micRecord: 'Record Answer',
+    recording: 'Listening...',
+
+    // KPIs & Metrics
+    overallReadiness: 'Overall Readiness',
+    targetRecruiter: 'Target Recruiter',
+    targetRole: 'Target Role',
+    currentStreak: 'Practice Streak',
+    daysStreak: 'days streak',
+    activeStudents: 'Active Students',
+    interviewReady: 'Interview Ready',
+    needsIntervention: 'Needs Intervention',
+    avgPackage: 'Average Package',
+    placementRate: 'Placement Rate',
+    totalQuestions: 'Historical Questions',
+    accuracy: 'Accuracy',
+    completion: 'Completion',
+    
+    // Status
+    status_ready: 'Interview Ready',
+    status_on_track: 'On Track',
+    status_needs_improvement: 'Needs Improvement',
+    status_high_priority: 'High Priority',
+
+    // Landing & Role Selection
+    heroTitle: 'Your Future. Your Skills. Your Career.',
+    heroSubtitle: 'One intelligent campus platform for learning, mentoring, and placement readiness.',
+    studentLoginTitle: 'Student Login',
+    studentLoginDesc: 'Learn, practice, build skills, and prepare for placements.',
+    continueAsStudent: 'Continue as Student',
+    facultyLoginTitle: 'Faculty Login',
+    facultyLoginDesc: 'Mentor students, track progress, and manage learning plans.',
+    continueAsFaculty: 'Continue as Faculty',
+    placementLoginTitle: 'Placement Cell Login',
+    placementLoginDesc: 'Manage recruitment drives, readiness insights, and placement outcomes.',
+    continueAsPlacement: 'Continue as Placement Officer',
+    signOut: 'Sign Out',
+    backToRoles: 'Back to Role Selection',
+  },
+
+  te: {
+    appName: 'కెరీర్‌ట్విన్ AI',
+    tagline: 'క్యాంపస్ ప్లేస్‌మెంట్ ఇంటెలిజెన్స్ & కెరీర్ డెవలప్‌మెంట్ ప్లాట్‌ఫామ్',
+    demoNotice: 'డెమో ప్రోటోటైప్ — 400 మంది విద్యార్థుల నమూనా డేటా. సంస్థాగత డేటా భద్రత సక్రియంగా ఉంది.',
+    
+    // Navigation
+    overview: 'ఓవర్‌వ్యూ',
+    copilot: 'AI కెరీర్ కోపైలట్',
+    recruiterIntel: 'రిక్రూటర్ ఇంటెలిజెన్స్',
+    subjectsSkills: 'సబ్జెక్టులు & నైపుణ్యాలు',
+    myPreparation: 'నా ప్రిపరేషన్ ప్రణాళిక',
+    practiceCenter: 'ప్రాక్టీస్ కేంద్రం',
+    mockInterview: 'AI మాక్ ఇంటర్వ్యూ',
+    resumeAssistant: 'రెజ్యూమే & పోర్ట్‌ఫోలియో',
+    communicationLab: 'కమ్యూనికేషన్ & స్పోకెన్ ల్యాబ్',
+    readinessScore: 'సంసిద్ధత విశ్లేషణ',
+    
+    // Placement Cell Navigation
+    students: 'విద్యార్థుల జాబితా',
+    recruiters: 'రిక్రూటర్లు & డ్రైవ్‌లు',
+    historicalDb: 'గత ప్రశ్నల నిల్వ (DB)',
+    skillGaps: 'నైపుణ్య లోపాల విశ్లేషణ',
+    training: 'శిక్షణా కార్యక్రమాలు',
+    interventions: 'ప్రత్యేక చర్యలు (Interventions)',
+    placementOutcomes: 'ప్లేస్‌మెంట్ ఫలితాలు',
+    dataMoat: 'డేటా మోట్ & భద్రత',
+    csvPipeline: 'CSV దిగుమతి / ఎగుమతి',
+    reports: 'రిపోర్ట్‌ల కేంద్రం',
+    auditLogs: 'ఆడిట్ లాగ్స్ & సెట్టింగ్స్',
+    mentorWorkspace: 'మెంటార్ & HOD కన్సోల్',
+    adminConsole: 'కళాశాల అడ్మినిస్ట్రేషన్',
+
+    // Role Labels
+    role_student: 'విద్యార్థి',
+    role_faculty: 'ఫ్యాకల్టీ మెంటార్',
+    role_placement_officer: 'ప్లేస్‌మెంట్ ఆఫీసర్',
+    role_hod: 'హెచ్ఓడి (HOD)',
+    role_training_coordinator: 'ట్రైనింగ్ కోఆర్డినేటర్',
+    role_college_admin: 'కళాశాల అడ్మినిస్ట్రేటర్',
+    role_super_admin: 'సూపర్ అడ్మినిస్ట్రేటర్',
+
+    // Common Actions
+    switchRole: 'పాత్ర మార్చు',
+    switchCollege: 'కళాశాల మార్చు',
+    darkTheme: 'డార్క్ మోడ్',
+    lightTheme: 'లైట్ మోడ్',
+    practiceNow: 'ఇప్పుడే ప్రాక్టీస్ చేయండి',
+    saveQuestion: 'సేవ్ చేయండి',
+    saved: 'సేవ్ చేయబడింది',
+    startMock: 'మాక్ ఇంటర్వ్యూ ప్రారంభించండి',
+    getAiGuidance: 'AI కోపైలట్‌ను అడగండి',
+    uploadResume: 'రెజ్యూమేను విశ్లేషించండి',
+    downloadReport: 'CSV డౌన్‌లోడ్',
+    importCsv: 'విద్యార్థి డేటా దిగుమతి',
+    reviewIntervention: 'సమీక్షించండి',
+    assignTraining: 'శిక్షణ కేటాయించండి',
+    markCompleted: 'పూర్తయిందిగా గుర్తించు',
+    speakAudio: 'వాయిస్ వినండి',
+    stopAudio: 'ఆపండి',
+    micRecord: 'సమాధానం రికార్డ్ చేయండి',
+    recording: 'రికార్డింగ్ అవుతోంది...',
+
+    // KPIs & Metrics
+    overallReadiness: 'మొత్తం సంసిద్ధత స్కోర్',
+    targetRecruiter: 'లక్ష్య రిక్రూటర్',
+    targetRole: 'లక్ష్య ఉద్యోగం',
+    currentStreak: 'నిరంతర ప్రాక్టీస్',
+    daysStreak: 'రోజుల స్ట్రీక్',
+    activeStudents: 'క్రియాశీల విద్యార్థులు',
+    interviewReady: 'ఇంటర్వ్యూకి సిద్ధం',
+    needsIntervention: 'ప్రత్యేక శ్రద్ధ అవసరం',
+    avgPackage: 'సగటు ప్యాకేజీ',
+    placementRate: 'ప్లేస్‌మెంట్ శాతం',
+    totalQuestions: 'గత ప్రశ్నలు',
+    accuracy: 'ఖచ్చితత్వం',
+    completion: 'పూర్తయిన శాతం',
+    
+    // Status
+    status_ready: 'ఇంటర్వ్యూకి సిద్ధం',
+    status_on_track: 'సరైన మార్గంలో',
+    status_needs_improvement: 'మెరుగుపడాలి',
+    status_high_priority: 'అత్యవసరం',
+
+    // Landing & Role Selection
+    heroTitle: 'మీ భవిష్యత్తు. మీ నైపుణ్యాలు. మీ కెరీర్.',
+    heroSubtitle: 'నేర్చుకోవడం, మార్గదర్శకత్వం మరియు ప్లేస్‌మెంట్ సంసిద్ధత కోసం ఒకే ఆధునిక క్యాంపస్ ప్లాట్‌ఫామ్.',
+    studentLoginTitle: 'విద్యార్థి లాగిన్',
+    studentLoginDesc: 'నేర్చుకోండి, ప్రాక్టీస్ చేయండి, నైపుణ్యాలు పెంచుకోండి మరియు ప్లేస్‌మెంట్‌లకు సిద్ధం కండి.',
+    continueAsStudent: 'విద్యార్థిగా కొనసాగండి',
+    facultyLoginTitle: 'ఫ్యాకల్టీ లాగిన్',
+    facultyLoginDesc: 'విద్యార్థులకు మార్గనిర్దేశం చేయండి, పురోగతిని ట్రాక్ చేయండి మరియు శిక్షణ పర్యవేక్షించండి.',
+    continueAsFaculty: 'ఫ్యాకల్టీగా కొనసాగండి',
+    placementLoginTitle: 'ప్లేస్‌మెంట్ సెల్ లాగిన్',
+    placementLoginDesc: 'రిక్రూట్‌మెంట్ డ్రైవ్‌లు, సంసిద్ధత అంతర్దృష్టులు మరియు ఉద్యోగ ఫలితాలను నిర్వహించండి.',
+    continueAsPlacement: 'ప్లేస్‌మెంట్ ఆఫీసర్‌గా కొనసాగండి',
+    signOut: 'లాగ్ అవుట్',
+    backToRoles: 'పాత్రల ఎంపికకు తిరిగి వెళ్లండి',
+  }
+};
+
+export function t(key: string, lang: SupportedLanguage): string {
+  return TRANSLATIONS[lang]?.[key] || TRANSLATIONS.en[key] || key;
+}
